@@ -7,10 +7,10 @@
 void insertion_sort_list(listint_t **list)
 {
 	if (*list == NULL)
-		return (*list);
+		return;
 
-	struct listint_s sorted = NULL;
-	struct listint_s curr = *list;
+	listint_s *sorted = NULL;
+	listint_s *curr = *list;
 
 	while (curr != NULL)
 	{
