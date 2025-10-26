@@ -15,7 +15,7 @@ void insertion_sort_list(listint_t **list)
 
 	while (curr != NULL)
 	{
-		struct listint_t *next = curr->next;
+		listint_t *next = curr->next;
 
 		if (sorted == NULL || sorted->n >= curr->n)
 		{
