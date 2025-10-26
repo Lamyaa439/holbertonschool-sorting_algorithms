@@ -17,7 +17,7 @@ void insertion_sort_list(listint_t **list)
 	{
 		struct listint_s *next = curr->next;
 
-		if (sorted == NULL || sorted->data >= curr->data)
+		if (sorted == NULL || sorted->n >= curr->n)
 		{
 			curr->next = sorted;
 			if (sorted != NULL)
@@ -30,7 +30,7 @@ void insertion_sort_list(listint_t **list)
 			listint_s *current_sorted = sorted;
 
 			while (current_sorted->next != NULL &&
-current_sorted->next->data < curr->data)
+current_sorted->next->n < curr->n)
 			{
 				current_sorted = current_sorted->next;
 			}
