@@ -43,5 +43,4 @@ current_sorted->next->data < curr->data)
 		curr = next;
 	}
 	*list = sorted;
-	return;
 }
