@@ -28,4 +28,8 @@ void print_array(const int *array, size_t size);
 void shell_sort(int *array, size_t size);
 int hoare_partition(int *array, int low, int high, size_t size);
 void quick_sort_hoare(int *array, size_t size);
+int hoare_partition(int *array, int low, int high, size_t size);
+void hoare_sort(int *array, int low, int high, size_t size);
+void swap_ints(int *a, int *b);
+
 #endif
