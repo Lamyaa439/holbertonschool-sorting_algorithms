@@ -1,9 +1,9 @@
 #include "sort.h"
 
 /**
- * swap - swaps two integers
- * @a: first int
- * @b: second int
+ * swap - Swap two integers
+ * @a: First integer
+ * @b: Second integer
  */
 void swap(int *a, int *b)
 {
@@ -14,11 +14,11 @@ void swap(int *a, int *b)
 
 /**
  * hoare_partition - Hoare partition scheme
- * @array: array of integers
- * @low: lower index
- * @high: higher index
- * @size: array size
- * Return: index for partition
+ * @array: Array to sort
+ * @low: Lower index
+ * @high: Higher index
+ * @size: Array size
+ * Return: Partition index
  */
 int hoare_partition(int *array, int low, int high, size_t size)
 {
@@ -44,11 +44,11 @@ int hoare_partition(int *array, int low, int high, size_t size)
 }
 
 /**
- * hoare_sort - recursively applies quicksort (Hoare)
- * @array: array
- * @low: low index
- * @high: high index
- * @size: array size
+ * hoare_sort - Recursive QuickSort using Hoare scheme
+ * @array: Array to sort
+ * @low: Lower index
+ * @high: Higher index
+ * @size: Array size
  */
 void hoare_sort(int *array, int low, int high, size_t size)
 {
@@ -63,9 +63,9 @@ void hoare_sort(int *array, int low, int high, size_t size)
 }
 
 /**
- * quick_sort_hoare - quicksort using Hoare partition scheme
- * @array: array to be sorted
- * @size: array size
+ * quick_sort_hoare - Sort array using Hoare partition scheme
+ * @array: Array to sort
+ * @size: Array size
  */
 void quick_sort_hoare(int *array, size_t size)
 {
