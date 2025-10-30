@@ -1,9 +1,9 @@
 #include "sort.h"
 
 /**
- * swap - swaps two integers
- * @a: first int
- * @b: second int
+ * swap - Swap two integers
+ * @a: First integer
+ * @b: Second integer
  */
 void swap(int *a, int *b)
 {
@@ -13,16 +13,16 @@ void swap(int *a, int *b)
 }
 
 /**
- * hoare_partition - Hoare partition scheme
- * @array: array to sort
+ * hoare_partition - hoare partition scheme
+ * @array: array
  * @low: low index
  * @high: high index
- * @size: size of array
+ * @size: array size
  * Return: partition index
  */
 int hoare_partition(int *array, int low, int high, size_t size)
 {
-	int pivot = array[high];
+	int pivot = array[low];
 	int i = low - 1;
 	int j = high + 1;
 
@@ -45,8 +45,8 @@ int hoare_partition(int *array, int low, int high, size_t size)
 }
 
 /**
- * hoare_sort - recursive quicksort using Hoare partition
- * @array: array to sort
+ * hoare_sort - recursive quicksort
+ * @array: array
  * @low: low index
  * @high: high index
  * @size: array size
@@ -64,7 +64,7 @@ void hoare_sort(int *array, int low, int high, size_t size)
 }
 
 /**
- * quick_sort_hoare - sort array w/ Hoare partition scheme
+ * quick_sort_hoare - Quick sort using Hoare scheme
  * @array: array to sort
  * @size: array size
  */
